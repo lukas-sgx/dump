@@ -7,8 +7,16 @@
 ##
 
 echo "INSTALLING PACKAGES FOR EPITECH'S PROJECT"
-curl -L -o repo.zip https://github.com/lukas-sgx/dump/archive/refs/heads/main.zip
-unzip main.zip
-rm main.zip
-echo ".gitignore" >> .gitignore
-echo "push_that.sh" >> .gitignore
+curl -L -o repo.zip https://github.com/lukas-sgx/dump/archive/refs/heads/master.zip
+if [ $? -ne 0 ]; then
+    echo "❌ Erreur lors du téléchargement."
+    exit 1
+fi
+unzip -q repo.zip -d ..
+rm repo.zip
+{
+    echo ""
+    echo ".gitignore"
+    echo "push_that.sh"
+} >> .gitignore
+echo "✅ Installation terminée."
