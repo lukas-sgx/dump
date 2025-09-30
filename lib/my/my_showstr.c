@@ -7,5 +7,5 @@
 
 void my_showstr(char const *str)
 {
-
+    return;
 }
