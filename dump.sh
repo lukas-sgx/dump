@@ -14,6 +14,7 @@ if [ $? -ne 0 ]; then
 fi
 unzip -q repo.zip -d ..
 rm repo.zip
+rm dump.sh
 {
     echo ""
     echo ".gitignore"
