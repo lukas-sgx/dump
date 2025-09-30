@@ -17,6 +17,7 @@ mv dump-master/* .
 rm -rf dump-master
 rm repo.zip
 find ./ -name "dump.sh*" -print0 | xargs -0 rm -f
+rm README.md
 {
     echo ""
     echo ".gitignore"
