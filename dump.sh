@@ -12,7 +12,9 @@ if [ $? -ne 0 ]; then
     echo "❌ Erreur lors du téléchargement."
     exit 1
 fi
-unzip -q repo.zip -d ..
+unzip -q repo.zip -d .
+mv dump-master/* .
+rm -rf dump-master
 rm repo.zip
 rm dump.sh
 {
