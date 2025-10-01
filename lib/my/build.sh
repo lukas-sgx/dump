@@ -6,6 +6,6 @@
 ## build mylib
 ##
 
-gcc -Wall -Wextra -c *.c
+gcc -c *.c
 ar rc libmy.a *.o
-rm mylib *.o
+rm *.o
