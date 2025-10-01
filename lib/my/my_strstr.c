@@ -7,7 +7,8 @@
 
 char *my_strstr(char *str, const char *to_find)
 {
-    int i, j;
+    int i;
+    int j;
 
     if (*to_find == '\0')
         return str;
